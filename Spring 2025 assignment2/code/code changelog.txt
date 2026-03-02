@@ -1,0 +1,8 @@
+setup.bat
+Compile im2col_cython.pyd with mingw32
+
+im2col_cython.py
+Rewrite im2col_cython.pyx instead of compile it with setup.py to prevent build tool installation, system mismatch (.so for Linux and .pyd for Windows) and version mismatch. But the forward and backward passes will be slower.
+
+rnn_layers_pytorch.py line241
+Target of torch.nn.functional.cross_entropy() should be a tensor of long type, not int type.

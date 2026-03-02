@@ -1,0 +1,5 @@
+When torch.__version__>=2.7.0 the fixed expected answers may be wrong. Use 2.6.0. (Corresponding torchvision 0.21.0)
+
+
+cell13 15
+\label{qkv_eqn} is not available to Katex.
